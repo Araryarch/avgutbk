@@ -98,7 +98,7 @@ const calculateAvgNormal = (pu, pk, ppu, pbm, lbi, lbing, pm) => {
 const getUtbkMessage = (avg) => {
   if (isNaN(avg)) {
     return 'Nilainya diisi dulu.'
-  } else if (avg >= 550 && avg <= 600) {
+  } else if (avg >= 580 && avg <= 600) {
     return 'Lu biasa aja sih'
   } else if (avg < 550) {
     return 'Lu dongo anjing.'
