@@ -18,6 +18,9 @@ const getInput = async (title, label) => {
       if (isNaN(value) || value < 0) {
         return 'Masukkan angka yang valid.'
       }
+      if (value > 1000) {
+        return 'Yang bener aja anjr nilailu segitu'
+      }
     }
   })
 
@@ -112,3 +115,7 @@ const getUtbkMessage = (avg) => {
     return 'Ini sih lu diluar nalar jir'
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  getValues()
+})
