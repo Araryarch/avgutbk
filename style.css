@@ -26,30 +26,11 @@
   align-items: center;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   font-size: 1rem;
   color: white;
+  flex: 1;
+  height: 80vh;
   background-color: #8839ef;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.avg-container:hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  font-size: 1rem;
-  color: white;
-  background-color: #8839ef;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 span {
@@ -71,4 +52,10 @@ span {
 
 .swal2-actions {
   background-color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
