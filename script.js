@@ -109,7 +109,7 @@ const getUtbkMessage = (avg) => {
   } else if (avg > 700 && avg <= 1000) {
     return 'Lu Pinter cuy, jangan salah strategi'
   } else {
-    return 'Ini sih lu pinter ya'
+    return 'Ini sih lu diluar nalar jir'
   }
 }
 
@@ -127,6 +127,6 @@ const getNormalMessage = (avg) => {
   } else if (avg > 700 && avg <= 1000) {
     return 'Lu Pinter cuy, jangan salah strategi'
   } else {
-    return 'Ini sih lu pinter ya'
+    return 'Ini sih lu diluar nalar jir'
   }
 }
