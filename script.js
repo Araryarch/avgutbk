@@ -98,23 +98,35 @@ const calculateAvgNormal = (pu, pk, ppu, pbm, lbi, lbing, pm) => {
 const getUtbkMessage = (avg) => {
   if (isNaN(avg)) {
     return 'Nilainya diisi dulu.'
-  } else if (avg >= 580 && avg <= 600) {
-    return 'Lu biasa aja sih'
-  } else if (avg < 580) {
+  } else if (avg < 450) {
     return 'Lu dongo anjing.'
+  } else if (avg >= 450 && avg <= 520) {
+    return 'Daftar Politeknik aja sih'
+  } else if (avg > 520 && avg <= 620) {
+    return 'Daftar ke Kampus top 10 + Test'
+  } else if (avg > 620 && avg <= 700) {
+    return 'Cari yang jurusannya ga terlalu gede aja lah ini'
+  } else if (avg > 700 && avg <= 1000) {
+    return 'Lu Pinter bro, jangan salah strategi'
   } else {
-    return 'Lu pinter gilak.'
+    return 'Ini sih lu pinter ya'
   }
 }
 
 const getNormalMessage = (avg) => {
   if (isNaN(avg)) {
     return 'Nilainya diisi dulu.'
-  } else if (avg >= 550 && avg <= 600) {
-    return 'Lu biasa aja sih'
-  } else if (avg < 550) {
+  } else if (avg < 450) {
     return 'Lu dongo anjing.'
+  } else if (avg >= 450 && avg <= 520) {
+    return 'Daftar Politeknik aja sih'
+  } else if (avg > 520 && avg <= 620) {
+    return 'Daftar ke Kampus top 10 + Test'
+  } else if (avg > 620 && avg <= 700) {
+    return 'Cari yang jurusannya ga terlalu gede aja lah ini'
+  } else if (avg > 700 && avg <= 1000) {
+    return 'Lu Pinter bro, jangan salah strategi'
   } else {
-    return 'Lu pinter gilak.'
+    return 'Ini sih lu pinter ya'
   }
 }
