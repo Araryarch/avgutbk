@@ -55,7 +55,7 @@ const getValues = async () => {
   document.querySelector('.avgNormal').innerHTML = avgNormal.toFixed(2)
   document.querySelector('.keteranganUtbk').innerHTML = getUtbkMessage(avgUtbk)
   document.querySelector('.keteranganNormal').innerHTML =
-    getNormalMessage(avgNormal)
+    'Rata Rata normal adalah rata rata tanpa rumus pembobotan UTBK'
 }
 
 const calculateAvgUTBK = (pu, pk, ppu, pbm, lbi, lbing, pm) => {
@@ -107,24 +107,6 @@ const getUtbkMessage = (avg) => {
   } else if (avg > 620 && avg <= 710) {
     return 'Cari yang jurusannya ga terlalu gede aja lah ini'
   } else if (avg > 710 && avg <= 1000) {
-    return 'Lu Pinter cuy, jangan salah strategi'
-  } else {
-    return 'Ini sih lu diluar nalar jir'
-  }
-}
-
-const getNormalMessage = (avg) => {
-  if (isNaN(avg)) {
-    return 'Nilainya diisi dulu.'
-  } else if (avg < 440) {
-    return 'Lu dongo anjing.'
-  } else if (avg >= 440 && avg <= 510) {
-    return 'Daftar Politeknik aja sih'
-  } else if (avg > 510 && avg <= 610) {
-    return 'Daftar ke Kampus top 10 + Test'
-  } else if (avg > 610 && avg <= 690) {
-    return 'Cari yang jurusannya ga terlalu gede aja lah ini'
-  } else if (avg > 690 && avg <= 1000) {
     return 'Lu Pinter cuy, jangan salah strategi'
   } else {
     return 'Ini sih lu diluar nalar jir'
