@@ -99,7 +99,7 @@ const getUtbkMessage = (avg) => {
   if (isNaN(avg)) {
     return 'Nilainya diisi dulu.'
   } else if (avg < 450) {
-    return 'Lu dongo anjing.'
+    return 'Belajar lagi aja deh, Semangat!!'
   } else if (avg >= 450 && avg <= 520) {
     return 'Daftar Politeknik aja sih'
   } else if (avg > 520 && avg <= 620) {
