@@ -100,7 +100,7 @@ const getUtbkMessage = (avg) => {
     return 'Nilainya diisi dulu.'
   } else if (avg >= 580 && avg <= 600) {
     return 'Lu biasa aja sih'
-  } else if (avg < 550) {
+  } else if (avg < 580) {
     return 'Lu dongo anjing.'
   } else {
     return 'Lu pinter gilak.'
