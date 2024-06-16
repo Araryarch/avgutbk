@@ -107,7 +107,7 @@ const getUtbkMessage = (avg) => {
   } else if (avg > 620 && avg <= 700) {
     return 'Cari yang jurusannya ga terlalu gede aja lah ini'
   } else if (avg > 700 && avg <= 1000) {
-    return 'Lu Pinter bro, jangan salah strategi'
+    return 'Lu Pinter cuy, jangan salah strategi'
   } else {
     return 'Ini sih lu pinter ya'
   }
@@ -125,7 +125,7 @@ const getNormalMessage = (avg) => {
   } else if (avg > 620 && avg <= 700) {
     return 'Cari yang jurusannya ga terlalu gede aja lah ini'
   } else if (avg > 700 && avg <= 1000) {
-    return 'Lu Pinter bro, jangan salah strategi'
+    return 'Lu Pinter cuy, jangan salah strategi'
   } else {
     return 'Ini sih lu pinter ya'
   }
