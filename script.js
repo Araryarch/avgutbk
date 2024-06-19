@@ -67,13 +67,13 @@ const calculateAvgUTBK = (pu, pk, ppu, pbm, lbi, lbing, pm) => {
     (isNaN(pk) ? 0 : pk) +
     (isNaN(ppu) ? 0 : ppu) +
     (isNaN(pbm) ? 0 : pbm)
-  const literasi = (isNaN(lbi) ? 0 : lbi) + (isNaN(lbing) ? 0 : lbing)
-  const matematika = isNaN(pm) ? 0 : pm
+  const literasi =
+    (isNaN(lbi) ? 0 : lbi) + (isNaN(lbing) ? 0 : lbing) + (isNaN(pm) ? 0 : pm)
 
   const skolastikAvg = skolastik !== 0 ? skolastik / 4 : 0
-  const literasiAvg = literasi !== 0 ? literasi / 2 : 0
+  const literasiAvg = literasi !== 0 ? literasi / 3 : 0
 
-  return (skolastikAvg + literasiAvg + matematika) / 3
+  return (skolastikAvg + literasiAvg) / 2
 }
 
 const calculateAvgNormal = (pu, pk, ppu, pbm, lbi, lbing, pm) => {
